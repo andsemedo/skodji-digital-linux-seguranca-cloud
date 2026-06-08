@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skodji Digital — Cabo Verde</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+
+  a { text-decoration: none; }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 6%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo { font-size: 1.1rem; font-weight: 700; color: #0a3d5e; }
+  .logo span { color: #f4a923; }
+
+  .nav-btn {
+    background: #0a3d5e;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 5rem 6% 4rem;
+    max-width: 680px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0a3d5e;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 520px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #0a3d5e;
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .stat-num { font-size: 1.75rem; font-weight: 700; color: #0a3d5e; }
+  .stat-label { font-size: 0.8rem; color: #888; margin-top: 2px; }
+
+  /* SECTION */
+  section { padding: 4rem 6%; border-top: 1px solid #eee; }
+
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0a3d5e;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  /* PROGRAMS */
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .prog-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .prog-card h3 { font-size: 1rem; font-weight: 600; color: #0a3d5e; margin-bottom: 0.5rem; }
+  .prog-card p { font-size: 0.875rem; color: #666; }
+
+  /* STEPS */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .step {
+    padding: 1.25rem;
+    background: #f7f9fb;
+    border-radius: 8px;
+  }
+
+  .step-num { font-size: 0.75rem; font-weight: 600; color: #f4a923; margin-bottom: 0.5rem; }
+  .step h4 { font-size: 0.9rem; font-weight: 600; color: #0a3d5e; margin-bottom: 0.35rem; }
+  .step p { font-size: 0.825rem; color: #666; }
+
+  /* CTA */
+  .cta {
+    background: #0a3d5e;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 6%;
+    border-top: none;
+  }
+
+  .cta h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem; }
+  .cta p { font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; }
+
+  .btn-yellow {
+    background: #f4a923;
+    color: #0a3d5e;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1.5rem 6%;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 700px) {
+    .programs, .steps { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.8rem; }
+    .stats { gap: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Skodji<span>Digital</span></div>
+  <a href="#candidatura" class="nav-btn">Candidatar-me</a>
+</nav>
+
+<div class="hero">
+  <h1>Capacitação digital para Cabo Verde</h1>
+  <p>O Skodji Digital forma 1.050 cabo-verdianos em competências digitais e de negócio, promovendo a empregabilidade e o empreendedorismo.</p>
+  <a href="#candidatura" class="btn">Manifestar interesse →</a>
+  <div class="stats">
+    <div>
+      <div class="stat-num">1 050</div>
+      <div class="stat-label">Participantes</div>
+    </div>
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">Programas</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Gratuito</div>
+    </div>
+  </div>
+</div>
+
+<section id="programas">
+  <div class="section-title">Os programas</div>
+  <p class="section-sub">Escolhe o percurso que melhor se adapta ao teu nível.</p>
+  <div class="programs">
+    <div class="prog-card">
+      <h3>Digital Upskilling</h3>
+      <p>Para quem já tem bases digitais e quer aprofundar conhecimentos em áreas de alta procura.</p>
+    </div>
+    <div class="prog-card">
+      <h3>Digital Reskilling</h3>
+      <p>Para quem quer mudar de carreira e iniciar trabalhos digitais remotos e temporários.</p>
+    </div>
+    <div class="prog-card">
+      <h3>Digital Activation</h3>
+      <p>Para quem está no início e quer entrar rapidamente no mercado de trabalho digital.</p>
+    </div>
+  </div>
+</section>
+
+<section id="etapas">
+  <div class="section-title">Como funciona</div>
+  <p class="section-sub">6 passos simples desde a candidatura até ao início do curso.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h4>Candidatura</h4>
+      <p>Preenches o formulário com os teus interesses e experiência digital.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h4>Análise</h4>
+      <p>A equipa técnica avalia a candidatura e confirma a seleção.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h4>Inscrição formal</h4>
+      <p>Recebes o curso atribuído e completas a inscrição oficial.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h4>Acesso à plataforma</h4>
+      <p>Recebes as credenciais para a plataforma de e-learning.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">05</div>
+      <h4>Boas-vindas</h4>
+      <p>Sessão de onboarding para conheceres a comunidade e ferramentas.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">06</div>
+      <h4>Início do programa</h4>
+      <p>Começas a tua formação e a construir o teu futuro digital.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="candidatura">
+  <h2>Pronto para começar?</h2>
+  <p>A primeira fase encerrou, mas podes manifestar interesse na próxima edição.</p>
+  <a href="#" class="btn-yellow">Manifestar interesse</a>
+</section>
+
+<footer>
+  <span><strong>Skodji Digital</strong> — Iniciativa do Governo de Cabo Verde</span>
+  <span>Financiado pelo Banco Mundial · Implementado com CESAE, SPI e Mundi Consulting</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Skodji Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-header {
+    padding: 4rem 6% 3rem;
+    border-bottom: 1px solid #eee;
+    max-width: 680px;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a3d5e;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .about-block {
+    max-width: 680px;
+  }
+
+  .about-block p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+  /* MISSION */
+  .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .mission-item {
+    background: #f7f9fb;
+    border-radius: 8px;
+    padding: 1.25rem;
+  }
+
+  .mission-item h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0a3d5e;
+    margin-bottom: 0.4rem;
+  }
+
+  .mission-item p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+  }
+
+  /* PARTNERS */
+  .partners-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .partner-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+  }
+
+  .partner-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0a3d5e;
+    min-width: 180px;
+  }
+
+  .partner-role {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  @media (max-width: 700px) {
+    .mission-grid { grid-template-columns: 1fr; }
+    .partner-name { min-width: unset; }
+    .partner-row { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Skodji<span>Digital</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="about.html">Sobre</a></li>
+  </ul>
+  <a href="index.html#candidatura" class="nav-btn">Candidatar-me</a>
+</nav>
+
+<div class="page-header">
+  <h1>Sobre o Skodji Digital</h1>
+  <p>Uma iniciativa do Governo de Cabo Verde para acelerar a transformação digital do país através das pessoas.</p>
+</div>
+
+<section>
+  <div class="section-title">O programa</div>
+  <p class="section-sub">Enquadramento institucional</p>
+  <div class="about-block">
+    <p>O Skodji Digital é uma iniciativa do Governo de Cabo Verde, integrada no projeto Digital Cabo Verde, financiada pelo Banco Mundial e implementada pela Direção de Cabo Verde Digital, do Ministério da Economia Digital.</p>
+    <p>O programa visa capacitar 1.050 participantes em competências digitais e de negócio, promovendo a empregabilidade, o empreendedorismo e o acesso a oportunidades profissionais dentro e fora de Cabo Verde.</p>
+    <p>A sua implementação segue boas práticas internacionais, assegurando transparência, acessibilidade e inclusão ao longo de todas as etapas.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">A nossa missão</div>
+  <p class="section-sub">Quatro pilares que guiam o programa.</p>
+  <div class="mission-grid">
+    <div class="mission-item">
+      <h4>Capacitação digital</h4>
+      <p>Dotar os participantes de competências práticas para o mercado de trabalho digital atual.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Empregabilidade</h4>
+      <p>Apoiar o acesso a oportunidades de emprego locais e internacionais após a formação.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Empreendedorismo</h4>
+      <p>Estimular a criação de negócios digitais através do Gabinete de Apoio às Ideias Digitais.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Inclusão</h4>
+      <p>Garantir acesso equitativo a todos os cidadãos, independentemente do nível de experiência.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Parceiros</div>
+  <p class="section-sub">Entidades envolvidas na implementação do programa.</p>
+  <div class="partners-list">
+    <div class="partner-row">
+      <div class="partner-name">Governo de Cabo Verde</div>
+      <div class="partner-role">Entidade promotora — Ministério da Economia Digital</div>
+    </div>
+    <div class="partner-row">
+      <div class="partner-name">Banco Mundial</div>
+      <div class="partner-role">Financiador — Projeto Digital Cabo Verde</div>
+    </div>
+    <div class="partner-row">
+      <div class="partner-name">Mundi Consulting</div>
+      <div class="partner-role">Parceiro de implementação</div>
+    </div>
+    <div class="partner-row">
+      <div class="partner-name">CESAE</div>
+      <div class="partner-role">Parceiro académico e de formação</div>
+    </div>
+    <div class="partner-row">
+      <div class="partner-name">SPI</div>
+      <div class="partner-role">Parceiro de implementação</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span><strong>Skodji Digital</strong> — Iniciativa do Governo de Cabo Verde</span>
+  <span>Financiado pelo Banco Mundial · Implementado com CESAE, SPI e Mundi Consulting</span>
+</footer>
+
+</body>
+</html>
